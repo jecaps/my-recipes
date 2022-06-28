@@ -1,0 +1,59 @@
+ion-card {
+  height: 22rem !important;
+  margin: 1rem 1.25rem;
+}
+
+ion-card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #36353b;
+  font-weight: 700;
+  font-size: 1.2rem !important;
+  text-transform: capitalize;
+}
+
+ion-card-header {
+  padding: 1rem !important;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.price-per-serving,
+.health-score,
+.prep-time,
+.value {
+  margin: 0.25rem;
+  text-align: center;
+  font-size: 0.85rem !important;
+}
+
+.value {
+  font-weight: 900;
+  color: #000;
+}
+
+.vegan {
+  color: #14342b;
+  /* font-weight: 700; */
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.go-to-recipe {
+  margin: 0;
+  color: #1982c4;
+  padding-right: 0.5rem;
+}
