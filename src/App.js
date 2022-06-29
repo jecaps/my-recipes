@@ -3,6 +3,7 @@ import "./App.css";
 // import Header from "./components/Header";
 // import Footer from "./components/Footer";
 import logo from "./images/kanzept-logo.png";
+import utensils from "./images/utensils.svg";
 import Slides from "./components/Slides";
 import popularData from "./popularData";
 import veganData from "./veganData";
@@ -59,9 +60,9 @@ function App() {
   });
 
   return (
-    <div class="drawer bg-white overflow-scroll">
+    <div class="drawer bg-white">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-      <div class="drawer-content flex flex-col">
+      <div class="drawer-content">
         <div class="navbar bg-yellow-300">
           <div class="navbar-start">
             <label
@@ -175,32 +176,38 @@ function App() {
           <h2 className="popular--title">Veggies Recipes</h2>
           {veganSlideElement}
         </div>
-      </div>
-
-      <div class="drawer-side">
-        <label for="my-drawer-3" class="drawer-overlay"></label>
-        <ul class="menu p-4 overflow-y-auto w-48 bg-yellow-300 text-yellow-900">
-          <li>
-            <a href="/">Homepage</a>
-          </li>
-          <li>
-            <a href="/">Portfolio</a>
-          </li>
-          <li>
-            <a href="/">About</a>
-          </li>
-        </ul>
-      </div>
-      {/* <Header />
-        <div className="carousel carousel-center rounded-box">
-          <h2 className="popular--title">Popular Recipes</h2>
-          {popularSlideElement}
-        </div>
         <div className="carousel carousel-center rounded-box">
           <h2 className="popular--title">Veggies Recipes</h2>
           {veganSlideElement}
         </div>
-        <Footer submit={getSearch} search={search} change={updateSearch} /> */}
+      </div>
+
+      <div class="drawer-side">
+        <label for="my-drawer-3" class="drawer-overlay"></label>
+        <ul class="menu p-4 overflow-y-auto w-64 bg-yellow-300 text-yellow-900 text-xl">
+          <div>
+            <img src={logo} alt="" className="w-11 max-h-full py-2 pl-2" />
+            <div class="w-full border-b border-yellow-200"></div>
+          </div>
+          <li className="focus:bg-[#facc156b] active::bg-[#facc156b] hover:bg-[#facc156b] ">
+            <a href="/" className="">
+              <ion-icon name="home-outline"></ion-icon>
+              Homepage
+            </a>
+          </li>
+          <li className="focus:bg-[#facc156b] active::bg-[#facc156b] hover:bg-[#facc156b]">
+            <a href="/" className="">
+              <ion-icon name="fast-food-outline"></ion-icon> All Recipes
+            </a>
+          </li>
+          <li className="focus:bg-[#facc156b] active::bg-[#facc156b] hover:bg-[#facc156b] ">
+            <a href="/" className="">
+              <ion-icon name="information-circle-outline"></ion-icon>
+              About
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
