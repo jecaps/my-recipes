@@ -35,7 +35,7 @@ function App() {
         image={recipe.image}
         time={recipe.readyInMinutes}
         title={recipe.title}
-        price={recipe.pricePerServing}
+        price={(recipe.pricePerServing / 100).toFixed(2)}
         score={recipe.healthScore}
         summary={recipe.summary}
         vegan={recipe.vegan}
@@ -50,7 +50,7 @@ function App() {
         image={recipe.image}
         time={recipe.readyInMinutes}
         title={recipe.title}
-        price={recipe.pricePerServing}
+        price={(recipe.pricePerServing / 100).toFixed(2)}
         score={recipe.healthScore}
         summary={recipe.summary}
         vegan={recipe.vegan}

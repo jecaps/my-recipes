@@ -14,4 +14,15 @@
   .slide-title {
     @apply py-4 text-3xl text-yellow-400 ml-6 font-medium;
   }
+
+  .price-per-serving,
+  .health-score,
+  .prep-time,
+  .value {
+    @apply m-0 text-center text-sm text-slate-600 font-thin mx-1;
+  }
+
+  .value {
+    @apply font-black text-slate-800;
+  }
 }
