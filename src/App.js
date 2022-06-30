@@ -3,7 +3,6 @@ import "./App.css";
 // import Header from "./components/Header";
 // import Footer from "./components/Footer";
 import logo from "./images/kanzept-logo.png";
-import utensils from "./images/utensils.svg";
 import Slides from "./components/Slides";
 import popularData from "./popularData";
 import veganData from "./veganData";
@@ -63,7 +62,7 @@ function App() {
     <div class="drawer bg-white">
       <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
-        <div class="navbar bg-yellow-300">
+        <div class="navbar bg-yellow-300 fixed">
           <div class="navbar-start">
             <label
               for="my-drawer-3"
@@ -167,17 +166,13 @@ function App() {
           </div>
         </div>
 
+        <h2 className="slide-title mt-16">Popular Recipes</h2>
         <div className="carousel carousel-center rounded-box">
-          <h2 className="popular--title">Popular Recipes</h2>
           {popularSlideElement}
         </div>
 
+        <h2 className="slide-title">Veggies Recipes</h2>
         <div className="carousel carousel-center rounded-box">
-          <h2 className="popular--title">Veggies Recipes</h2>
-          {veganSlideElement}
-        </div>
-        <div className="carousel carousel-center rounded-box">
-          <h2 className="popular--title">Veggies Recipes</h2>
           {veganSlideElement}
         </div>
       </div>

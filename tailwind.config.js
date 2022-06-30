@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         cursive: ["Annie Use Your Telescope", "cursive"],
+        "sans-serif": ["Roboto", "sans-serif"],
       },
     },
   },

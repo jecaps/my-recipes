@@ -2,13 +2,15 @@ import "./Slides.css";
 
 const Slides = (props) => {
   return (
-    <div className="carousel-item">
-      <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="carousel-item  mb-10 mx-6 -z-10">
+      <div className="card w-[23rem] h-[27rem] bg-yellow-50 shadow-lg">
         <figure>
           <img src={props.image} alt="Shoes" />
         </figure>
-        <div className="card-body">
-          <h2 className="">{props.title}</h2>
+        <div className="card-body py-3">
+          <h2 className="text-lg font-semibold text-slate-800">
+            {props.title}
+          </h2>
           <div className="content-container">
             <div className="prep-time--container">
               <p className="prep-time">Prep Time ⏱</p>
