@@ -12,7 +12,7 @@
 
 @layer components {
   .slide-title {
-    @apply py-4 text-3xl text-yellow-400 ml-6 font-medium;
+    @apply py-4 text-3xl text-amber-300 ml-6 font-bold;
   }
 
   .price-per-serving,
@@ -24,5 +24,9 @@
 
   .value {
     @apply font-black text-slate-800;
+  }
+
+  .drawer-item {
+    @apply focus:bg-[#facc156b] active:bg-[#facc156b] target:bg-[#facc156b] focus:text-white active:text-white target:text-white;
   }
 }

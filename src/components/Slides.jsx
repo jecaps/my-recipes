@@ -1,12 +1,12 @@
 const Slides = (props) => {
   return (
-    <div className="carousel-item mb-8 mx-6 -z-10">
-      <div className="card w-[22rem] h-[26rem] bg-yellow-50 shadow-lg shadow-yellow-600/10">
+    <div className="carousel-item mb-8 mx-2 -z-10">
+      <div className="card w-[21rem] h-[25rem] bg-yellow-50 shadow-lg shadow-yellow-700/20">
         <figure>
           <img src={props.image} alt="Shoes" />
         </figure>
         <div className="card-body px-6 py-4">
-          <h2 className="text-xl font-bold text-slate-800 capitalize whitespace-nowrap overflow-hidden text-ellipsis drop-shadow">
+          <h2 className="text-xl font-bold text-slate-800 capitalize whitespace-nowrap overflow-hidden text-ellipsis">
             {props.title}
           </h2>
           <div className="content-container flex justify-evenly p-2">
@@ -26,7 +26,7 @@ const Slides = (props) => {
             </div>
           </div>
 
-          <div className="bottom flex justify-between p-2">
+          <div className="bottom flex justify-between p-1">
             <p className="vegan text-green-800">
               {props.vegan ? "🌿 VEGAN" : " "}
             </p>
