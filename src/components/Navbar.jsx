@@ -4,10 +4,7 @@ export default function Navbar(props) {
   return (
     <div className="navbar bg-yellow-300 fixed">
       <div className="navbar-start">
-        <label
-          for="my-drawer-3"
-          className="btn btn-ghost btn-square focus:bg-[#facc156b] active::bg-[#facc156b] hover:bg-[#facc156b]"
-        >
+        <label for="my-drawer-3" className="navbar-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="fill-current h-5 w-5"
@@ -44,10 +41,7 @@ export default function Navbar(props) {
           <div className="form-control">
             <form type="submit">
               <div className="input-group">
-                <button
-                  className="btn btn-sm btn-square bg-yellow-50 text-yellow-900 border-0 focus:bg-yellow-100 active:bg-yellow-100 h-10 text-lg px-5"
-                  onClick={props.showSearchBar}
-                >
+                <button className="searchbar-btn" onClick={props.showSearchBar}>
                   ×
                 </button>
                 <input
@@ -57,10 +51,7 @@ export default function Navbar(props) {
                   placeholder="Search Recipe"
                   className="input-sm bg-yellow-50 text-yellow-900 placeholder-yellow-700 focus:outline-0 active:outline-0 w-48 h-10"
                 />
-                <button
-                  onSubmit={props.getSearch}
-                  className="btn btn-sm btn-square bg-yellow-50 text-yellow-900 border-0 focus:bg-yellow-100 active:bg-yellow-100 h-10 text-lg px-5"
-                >
+                <button onClick={props.getSearch} className="searchbar-btn">
                   🔍︎
                 </button>
               </div>
@@ -71,10 +62,7 @@ export default function Navbar(props) {
 
       <div className="navbar-end">
         {!props.isSearchShown && (
-          <button
-            className="btn btn-ghost btn-square focus:bg-[#facc156b] active::bg-[#facc156b] hover:bg-[#facc156b]"
-            onClick={props.showSearchBar}
-          >
+          <button className="navbar-btn" onClick={props.showSearchBar}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -92,7 +80,7 @@ export default function Navbar(props) {
           </button>
         )}
 
-        <button className="btn btn-ghost btn-square focus:bg-[#facc156b] active:bg-[#facc156b] hover:bg-[#facc156b]">
+        <button className="navbar-btn">
           <div className="indicator">
             <svg
               xmlns="http://www.w3.org/2000/svg"

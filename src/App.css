@@ -11,6 +11,14 @@
 }
 
 @layer components {
+  .navbar-btn {
+    @apply btn btn-ghost btn-square focus:bg-[#facc156b] active:bg-[#facc156b] hover:bg-[#facc156b];
+  }
+
+  .searchbar-btn {
+    @apply btn btn-sm btn-square bg-yellow-50 text-yellow-900 border-0 focus:bg-yellow-100 active:bg-yellow-100 target:bg-yellow-100 h-10 text-lg px-5;
+  }
+
   .slide-title {
     @apply py-4 text-3xl text-amber-300 ml-6 font-bold;
   }

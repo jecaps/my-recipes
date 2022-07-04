@@ -1,6 +1,6 @@
 const Slides = (props) => {
   return (
-    <div className="carousel-item mb-8 mx-2 -z-10">
+    <div className="carousel-item mb-8 mx-auto px-2 -z-10">
       <div className="card w-[21rem] h-[25rem] bg-yellow-50 shadow-lg shadow-yellow-700/20">
         <figure>
           <img src={props.image} alt="Shoes" />
