@@ -16,7 +16,7 @@
   }
 
   .searchbar-btn {
-    @apply btn btn-sm btn-square bg-yellow-50 text-yellow-900 border-0 focus:bg-yellow-100 active:bg-yellow-100 target:bg-yellow-100 h-10 text-lg px-5;
+    @apply btn btn-sm btn-square bg-yellow-50 text-yellow-900 border-0 target:bg-yellow-100 focus:bg-yellow-100 focus-visible:bg-yellow-100 focus-within:bg-yellow-100 active:bg-yellow-100 visited:bg-yellow-100 h-10 text-lg px-5;
   }
 
   .slide-title {

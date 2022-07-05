@@ -25,7 +25,7 @@ export default function Navbar(props) {
       <div className="navbar-center">
         {!props.isSearchShown && (
           <a
-            className="btn btn-ghost normal-case text-xl text-yellow-900 font-cursive focus:bg-[#facc156b] active::bg-[#facc156b] hover:bg-[#facc156b]"
+            className="btn btn-ghost normal-case text-xl text-yellow-900 font-cursive focus:bg-[#facc156b] active:bg-[#facc156b] hover:bg-[#facc156b]"
             href="/"
           >
             Kanzepts{" "}

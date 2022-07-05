@@ -33,28 +33,28 @@ function App() {
     setSearch("");
   };
 
-  useEffect(() => {
-    const getPopular = async () => {
-      const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&tags=meat&number=6`
-      );
-      const data = await api.json();
-      console.log(data);
-      setPopular(data.recipes);
-    };
+  // useEffect(() => {
+  //   const getPopular = async () => {
+  //     const api = await fetch(
+  //       `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&tags=meat&number=6`
+  //     );
+  //     const data = await api.json();
+  //     console.log(data);
+  //     setPopular(data.recipes);
+  //   };
 
-    const getVegan = async () => {
-      const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&tags=vegan&number=6`
-      );
-      const data = await api.json();
-      console.log(data);
-      setVegan(data.recipes);
-    };
+  //   const getVegan = async () => {
+  //     const api = await fetch(
+  //       `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&tags=vegan&number=6`
+  //     );
+  //     const data = await api.json();
+  //     console.log(data);
+  //     setVegan(data.recipes);
+  //   };
 
-    getPopular();
-    getVegan();
-  }, []);
+  //   getPopular();
+  //   getVegan();
+  // }, []);
 
   useEffect(() => {
     const makeRequest = async () => {
@@ -125,7 +125,7 @@ function App() {
           search={search}
         />
 
-        {query.length <= 0 ? (
+        {query.length === 0 ? (
           <>
             <h2 className="slide-title mt-16">Popular Recipes</h2>
             <div className="carousel carousel-center px-4">
@@ -139,7 +139,11 @@ function App() {
           </>
         ) : (
           <>
-            <h2 className="slide-title mt-16">Results from "{query}"</h2>
+            <h2 className="slide-title text-yellow-900 text-2xl mt-16">
+              {response.length === 0
+                ? `No Results from "${query}" found`
+                : `Results from "${query}"`}
+            </h2>
             <div className="carousel carousel-vertical m-auto">
               {querySlideElement}
             </div>
