@@ -15,6 +15,6 @@ The main objective of building this app is to be able to use it at home, where w
 
 <br></br>
 
-<div style="text-align: center; height: 56.25rem">
+<div style="display: flex; justify-content: center; height: 56.25rem">
 <img src="./src/images/recipe-app.gif"
 </div>
