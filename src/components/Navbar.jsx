@@ -49,7 +49,7 @@ export default function Navbar(props) {
                   type="text"
                   value={props.search}
                   placeholder="Search Recipe"
-                  className="input-sm bg-yellow-50 text-yellow-900 placeholder-yellow-700 focus:outline-0 active:outline-0 w-48 h-10"
+                  className="input-sm bg-yellow-50 text-yellow-900 placeholder-yellow-700 focus:outline-0 active:outline-0 w-48 h-10 px-0"
                 />
                 <button onClick={props.getSearch} className="searchbar-btn">
                   🔍︎
